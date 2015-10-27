@@ -119,6 +119,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BufferHandler.h" />
+    <ClInclude Include="MovableImage.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="OperatorImage.h" />
@@ -128,6 +129,7 @@
     <ClCompile Include="BufferHandler.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MovableImage.cpp" />
     <ClCompile Include="OperatorImage.cpp" />
     <ClCompile Include="Size.cpp" />
   </ItemGroup>

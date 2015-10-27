@@ -1,3 +1,4 @@
+#include "MovableImage.h"
 #include "OperatorImage.h"
 #include <iostream>
 
@@ -29,12 +30,25 @@ void ManipulateImage2()
 
 	OperatorImage resultImage = inputImage1 * inputImage2;			// Multiplies im1 and im2 and stores the result into resultImage
 }
+void ManipulateImage3()
+{
+	Size imageSize(100, 100); 										// Create a 100x100 CSize-object
+	MovableImage inputImage1;										// Construct Image
+	inputImage1.AllocBuffer(imageSize);								// Allocate Buffer
+	inputImage1 = inputImage1 + 0.5;								// Add 0.5 to itself
+
+	MovableImage inputImage2;										// Construct Image
+	inputImage2.AllocBuffer(imageSize);								// Allocate Buffer
+
+	MovableImage resultImage = inputImage1 * inputImage2;			// Multiplies im1 and im2 and stores the result into resultImage
+}
 
 int main()
 {
 	try {
 		ManipulateImage();
-		ManipulateImage2();
+		//ManipulateImage2();		// This crashes
+		ManipulateImage3();
 	}
 	catch (std::exception e)
 	{

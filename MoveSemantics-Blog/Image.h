@@ -36,7 +36,7 @@ public:
 	Size GetSize() const;
 
 
-private:
+protected:
 	int m_nBufferId = 0;
 	Size m_Size;
 };
