@@ -121,12 +121,14 @@
     <ClInclude Include="BufferHandler.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="Image.h" />
+    <ClInclude Include="OperatorImage.h" />
     <ClInclude Include="Size.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferHandler.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OperatorImage.cpp" />
     <ClCompile Include="Size.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

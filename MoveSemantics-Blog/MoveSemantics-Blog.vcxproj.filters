@@ -27,6 +27,9 @@
     <ClInclude Include="Operation.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="OperatorImage.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Size.cpp">
@@ -39,6 +42,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="OperatorImage.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

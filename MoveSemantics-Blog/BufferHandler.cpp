@@ -15,7 +15,6 @@ void BufferHandler::RequestFree(int BufferId)
 	if (it == BufferMap.end())
 	{
 		throw std::exception("BufferNotAllocatedException");
-		return;
 	}
 
 	BufferMap.erase(it);
