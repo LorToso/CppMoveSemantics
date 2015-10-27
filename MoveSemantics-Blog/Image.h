@@ -5,7 +5,10 @@
 
 class Image {
 public:
-	Image() = default;
+	Image()
+	{
+		AllocBuffer(Size(0,0));
+	}
 	~Image()
 	{
 		FreeBuffer();
@@ -22,7 +25,7 @@ public:
 	{
 		if (m_nBufferId == 0)
 			return;
-
+		
 		BufferHandler::RequestFree(m_nBufferId);
 		m_nBufferId = 0;
 	};

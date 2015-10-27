@@ -1,4 +1,5 @@
 #include "Image.h"
+#include <iostream>
 
 void ManipulateImage()
 {
@@ -22,8 +23,11 @@ int main()
 	try {
 		ManipulateImage();
 	}
-	catch (...)
+	catch (std::exception e)
 	{
-
+		std::cout << " Unhandled Exception: " << e.what();
+		return 1;
 	}
+	std::cout << "Success" << std::endl;
+	return 0;
 }

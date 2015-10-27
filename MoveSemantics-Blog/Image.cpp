@@ -1,10 +1,10 @@
 #include "Image.h"
 
-void Image::Arith(const Image & Source1, const Image & Source2, Operation op)
+void Image::Arith(const Image & , const Image & , Operation )
 {
 }
 
-void Image::Arith(const Image & Source1, const double constant, Operation op)
+void Image::Arith(const Image & , const double , Operation )
 {
 }
 

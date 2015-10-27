@@ -6,8 +6,7 @@ std::map<int, Size> BufferHandler::BufferMap = std::map<int, Size>();
 int BufferHandler::RequestBuffer(Size size)
 {
 	BufferMap[NextBufferId] = size;
-	NextBufferId++;
-	return NextBufferId;
+	return NextBufferId++;
 }
 void BufferHandler::RequestFree(int BufferId)
 {
