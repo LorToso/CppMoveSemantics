@@ -14,6 +14,7 @@ public:
 		result.Arith(first, constant, Operation::ADD);
 		return result;
 	}
+
 	friend OperatorImage operator*(const OperatorImage & first, const OperatorImage & second)
 	{
 		OperatorImage result;

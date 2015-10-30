@@ -11,6 +11,7 @@ public:
 	friend MovableImage operator+(const MovableImage & first, const double constant);
 
 	friend MovableImage operator*(const MovableImage & first, const MovableImage & second);
+	MovableImage & operator+=(const double constant);
 
 	MovableImage & operator=(MovableImage && toMove);
 

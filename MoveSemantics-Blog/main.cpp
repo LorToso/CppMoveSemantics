@@ -18,6 +18,7 @@ void ManipulateImage()
 	resultImage.Arith(inputImage1, inputImage2, Operation::MULT);	// Multiplies im1 and im2 and stores the result into resultImage
 
 }
+
 void ManipulateImage2()
 {
 	Size imageSize(100, 100); 										// Create a 100x100 CSize-object
@@ -43,12 +44,26 @@ void ManipulateImage3()
 	MovableImage resultImage = inputImage1 * inputImage2;			// Multiplies im1 and im2 and stores the result into resultImage
 }
 
+void ManipulateImage4()
+{
+	Size imageSize(100, 100); 										// Create a 100x100 CSize-object
+	MovableImage inputImage1;										// Construct Image
+	inputImage1.AllocBuffer(imageSize);								// Allocate Buffer
+	inputImage1 +=  0.5;											// Add 0.5 to itself
+
+	MovableImage inputImage2;										// Construct Image
+	inputImage2.AllocBuffer(imageSize);								// Allocate Buffer
+
+	MovableImage resultImage = inputImage1 * inputImage2;			// Multiplies im1 and im2 and stores the result into resultImage
+}
+
 int main()
 {
 	try {
-		ManipulateImage();
+		ManipulateImage();			// Works but is ugly code
 		//ManipulateImage2();		// This crashes
-		ManipulateImage3();
+		ManipulateImage3();			// Works well
+		ManipulateImage4();			// Works and is even slightly nicer
 	}
 	catch (std::exception e)
 	{

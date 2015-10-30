@@ -11,6 +11,16 @@ MovableImage::MovableImage(MovableImage && toMove)
 {
 	Swap(std::move(toMove));
 }
+MovableImage & MovableImage::operator=(MovableImage && toMove)
+{
+	Swap(std::move(toMove));
+	return *this;
+}
+void MovableImage::Swap(MovableImage && toMove)
+{
+	std::swap(m_Size, toMove.m_Size);
+	std::swap(m_nBufferId, toMove.m_nBufferId);
+}
 
 
 MovableImage::~MovableImage()
@@ -30,13 +40,8 @@ MovableImage operator+(const MovableImage & first, const double constant)
 	result.Arith(first, constant, Operation::ADD);
 	return result;
 }
-MovableImage & MovableImage::operator=(MovableImage && toMove)
+MovableImage & MovableImage::operator+=(const double constant)
 {
-	Swap(std::move(toMove));
+	Arith(*this, constant, Operation::ADD);
 	return *this;
-}
-void MovableImage::Swap(MovableImage && toMove)
-{
-	std::swap(m_Size, toMove.m_Size);
-	std::swap(m_nBufferId, toMove.m_nBufferId);
 }

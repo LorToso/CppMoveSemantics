@@ -9,6 +9,7 @@ public:
 	{
 		AllocBuffer(Size(0,0));
 	}
+	
 	~Image()
 	{
 		FreeBuffer();
