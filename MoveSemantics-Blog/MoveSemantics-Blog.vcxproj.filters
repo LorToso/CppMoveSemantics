@@ -33,6 +33,9 @@
     <ClInclude Include="MovableImage.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="CopyableImage.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Size.cpp">
@@ -51,6 +54,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="MovableImage.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyableImage.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
